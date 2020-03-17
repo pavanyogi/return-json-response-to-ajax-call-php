@@ -19,6 +19,7 @@
                     url: $(this).attr('action'), //Relative or absolute path to response.php file
                     data: data,
                     success: function (data) {
+                        console.dir(data);
                         $(".the-return").html(
                             "Favorite beverage: " + data["favorite_beverage"] + "<br />Favorite restaurant: " + data["favorite_restaurant"] + "<br />Gender: " + data["gender"] + "<br />JSON: " + data["json"]
                         );
