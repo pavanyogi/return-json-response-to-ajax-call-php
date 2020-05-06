@@ -11,10 +11,11 @@
                     "action": "test"
                 };
                 data = $(this).serialize() + "&" + $.param(data);
+                // https://api.jquery.com/jquery.ajax/
                 $.ajax({
                     // type: "POST",
                     type: $(this).attr("method"),
-                    dataType: "json",
+                    dataType: 'json',
                     // url: "response.php", //Relative or absolute path to response.php file
                     url: $(this).attr('action'), //Relative or absolute path to response.php file
                     data: data,

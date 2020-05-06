@@ -27,5 +27,8 @@ function test_function()
     //$return["favorite_restaurant"] = "McDonald's";
 
     $return["json"] = json_encode($return);
+    // https://stackoverflow.com/questions/4064444/returning-json-from-a-php-script/4064468#4064468
+    header('Content-Type: application/json');
     echo json_encode($return);
+    // exit();
 }
