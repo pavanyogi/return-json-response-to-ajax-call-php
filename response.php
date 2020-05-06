@@ -28,7 +28,7 @@ function test_function()
 
     $return["json"] = json_encode($return);
     // https://stackoverflow.com/questions/4064444/returning-json-from-a-php-script/4064468#4064468
-    header('Content-Type: application/json');
+    header('Content-type:application/json;charset=utf-8');
     echo json_encode($return);
     // exit();
 }
